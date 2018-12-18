@@ -1,0 +1,6 @@
+By default, the logger will write a log at /home/ubunutu/prattle.log, and will log every message at level "INFO" and above.
+If you wish to be able to reconfigure the logging at run time (including editing the log file location and editing the logging level), you will need to do two things: 
+1. Place a valid log4j2 configuration file on your system.  One option is to copy the file in Prattle/src/main/resources/log4j2.xml file to, i.e: /home/ubuntu/log4j2.xml
+1. When launching the prattle server, launch with the option -Dlog4j.configurationFile=/path/to/your/config/file (substituting in your config file path), i.e: launch the prattle server with the command
+`java -jar -Dlog4j.configurationFile=/home/ubuntu/log4j2.xml Prattle-0.0.1-SNAPSHOT-jar-with-dependencies.jar`
+Configured in this way, any edits you make to the configuration file will take effect shortly after saving the changes.  To change logging level in the provided configuration file, alter <Root level="info"> from "info" to your desired level.

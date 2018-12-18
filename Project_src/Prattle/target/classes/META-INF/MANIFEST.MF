@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: Tanmay
+Class-Path: lib/json-simple-1.1.1.jar lib/junit-4.10.jar lib/hamcrest-
+ core-1.1.jar lib/mysql-connector-java-8.0.13.jar lib/protobuf-java-3.
+ 6.1.jar
+Build-Jdk: 1.8.0_151
+Created-By: Maven Integration for Eclipse
+Main-Class: edu.northeastern.ccs.im.server.Prattle
+
